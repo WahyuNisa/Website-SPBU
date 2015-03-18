@@ -1,0 +1,12 @@
+<html>
+<?php
+			$sql=mysql_query ('select * from berita');
+			$no = 1;
+			echo "<table border=1>";
+			while($ambil=mysql_fetch_array($sql)){
+				echo "<tr><td>$ambil[0]</td><td>$ambil[1]</td><td>$ambil[2]</td></tr>";
+				$no++;
+			}
+			echo "</table>";
+?>
+</html>
